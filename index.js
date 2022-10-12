@@ -9,6 +9,9 @@ function countDown1() {
             const dirr = ["Left", "Right"];
             const random = Math.floor(Math.random() * dirr.length);
             document.getElementById("dirrection").innerHTML = dirr[random];
+            // speak the dirrection
+            var msg = new SpeechSynthesisUtterance(dirr[random]);
+            window.speechSynthesis.speak(msg);
             clearInterval(interval);
             countDown2();
             setTimeout(function() {
@@ -29,6 +32,9 @@ function countDown2() {
             const dirr = ["Left", "Right"];
             const random = Math.floor(Math.random() * dirr.length);
             document.getElementById("dirrection").innerHTML = dirr[random];
+            // speak the dirrection
+            var msg = new SpeechSynthesisUtterance(dirr[random]);
+            window.speechSynthesis.speak(msg);
             clearInterval(interval);
             countDown2();
             // clear the dirrection div after 1 seconds
