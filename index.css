@@ -1,0 +1,35 @@
+*{
+    background-color: white;
+    overflow-x: none;
+}
+
+
+.putItInTheMuddle{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.putItInTheMuddle #dirrection{
+    color: gray;
+    font-weight: lighter;
+    font-size: 40px;
+}
+
+.putItInTheMuddle h1{
+    color: black;
+    font-weight: bold;
+    font-size: 120px;
+    text-align: center;
+}
+
+.putItInTheMuddle button{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    font-size: 25px;
+    width: 100%;
+    border-radius: 10px;
+}
