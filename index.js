@@ -6,7 +6,9 @@ function countDown1() {
     var count = 5;
     var interval = setInterval(function() {
         if (count == 0) {
-            document.getElementById("dirrection").innerHTML = Math.random() < 0.5 ? "left" : "right";
+            const dirr = ["Left", "Right"];
+            const random = Math.floor(Math.random() * dirr.length);
+            document.getElementById("dirrection").innerHTML = dirr[random];
             clearInterval(interval);
             countDown2();
             setTimeout(function() {
@@ -24,7 +26,9 @@ function countDown2() {
     var interval = setInterval(function() {
         if (count == 0) {
             // print random direction either left or right to the dirrection div
-            document.getElementById("dirrection").innerHTML = Math.random() < 0.5 ? "left" : "right";
+            const dirr = ["Left", "Right"];
+            const random = Math.floor(Math.random() * dirr.length);
+            document.getElementById("dirrection").innerHTML = dirr[random];
             clearInterval(interval);
             countDown2();
             // clear the dirrection div after 1 seconds
